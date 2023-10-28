@@ -70,7 +70,7 @@ public class ChatGPTTest {
         plugin.setArgs(Collections.singletonList(arg));
 
         // Message message1 = Message.builder().role(Message.Role.USER).content("秦始皇统一了哪六国。").build();
-        Message message2 = Message.builder().role(Message.Role.USER).content("获取上海市的天气现在多少度，然后再给出3个推荐的户外运动。").build();
+        Message message2 = Message.builder().role(Message.Role.USER).content("获取北京市的天气现在多少度，然后再给出3个推荐的户外运动。").build();
         List<Message> messages = new ArrayList<>();
         // messages.add(message1);
         messages.add(message2);
