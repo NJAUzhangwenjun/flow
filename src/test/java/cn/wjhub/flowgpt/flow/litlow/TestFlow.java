@@ -1,16 +1,21 @@
 package cn.wjhub.flowgpt.flow.litlow;
 
+import cn.wjhub.flowgpt.flow.context.AbsContext;
+import cn.wjhub.flowgpt.flow.context.FlowContext;
 import cn.wjhub.flowgpt.flow.liteTest.context.CustomContext;
-import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson.JSON;
 import com.yomahub.liteflow.core.FlowExecutor;
 import com.yomahub.liteflow.flow.LiteflowResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.TestPropertySource;
 
 import javax.annotation.Resource;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+// @TestPropertySource(locations = "classpath:application.yml")
 @Slf4j
 public class TestFlow {
 
@@ -19,7 +24,10 @@ public class TestFlow {
 
     @Test
     public void testConfig() {
-        LiteflowResponse response = flowExecutor.execute2Resp("chain1");
+        FlowContext flowContext = FlowContext.builder().topic("test").id("1").chainName("chain2").flowType(FlowContext.FlowType.FORM).build();
+        flowContext.setData("name", "chatGpt");
+        flowContext.setData("template", "Hello, ${name}");
+        LiteflowResponse response = flowExecutor.execute2Resp("chain2",null,flowContext);
         System.out.println("response = " + JSON.toJSONString(response.getExecuteStepStr()));
     }
 

@@ -1,7 +1,7 @@
-package cn.wjhub.flowgpt.flow.gpt.plugin;
+package cn.wjhub.flowgpt.gpt.plugin;
 
-import cn.wjhub.flowgpt.flow.gpt.plugin.entity.WeatherReq;
-import cn.wjhub.flowgpt.flow.gpt.plugin.entity.WeatherResp;
+import cn.wjhub.flowgpt.gpt.plugin.entity.WeatherReq;
+import cn.wjhub.flowgpt.gpt.plugin.entity.WeatherResp;
 import com.alibaba.fastjson2.JSON;
 import com.unfbx.chatgpt.plugin.PluginAbstract;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
-package cn.wjhub.flowgpt.flow.gpt;
+package cn.wjhub.flowgpt.gpt;
 
-import cn.wjhub.flowgpt.flow.gpt.plugin.WeatherPlugin;
-import cn.wjhub.flowgpt.flow.gpt.plugin.entity.WeatherReq;
+import cn.wjhub.flowgpt.gpt.plugin.WeatherPlugin;
+import cn.wjhub.flowgpt.gpt.plugin.entity.WeatherReq;
 import com.unfbx.chatgpt.OpenAiClient;
 import com.unfbx.chatgpt.OpenAiStreamClient;
 import com.unfbx.chatgpt.entity.chat.ChatCompletion;

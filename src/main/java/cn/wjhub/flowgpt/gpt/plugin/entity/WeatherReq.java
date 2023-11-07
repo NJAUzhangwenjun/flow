@@ -1,4 +1,4 @@
-package cn.wjhub.flowgpt.flow.gpt.plugin.entity;
+package cn.wjhub.flowgpt.gpt.plugin.entity;
 
 import com.unfbx.chatgpt.plugin.PluginParam;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package cn.wjhub.flowgpt.flow.gpt;
+package cn.wjhub.flowgpt.gpt;
 
 import com.alibaba.fastjson2.JSON;
 import com.fasterxml.jackson.annotation.JsonInclude;

@@ -1,0 +1,7 @@
+#liteflow:
+#  #规则文件路径
+#  rule-source: config/flow.el.xml
+#  #liteflow是否开启，默认为true
+#  enable: true
+#  #liteflow的banner打印是否开启，默认为true
+#  print-banner: true

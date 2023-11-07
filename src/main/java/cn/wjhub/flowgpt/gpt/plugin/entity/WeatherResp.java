@@ -1,4 +1,4 @@
-package cn.wjhub.flowgpt.flow.gpt.plugin.entity;
+package cn.wjhub.flowgpt.gpt.plugin.entity;
 
 import lombok.Data;
 
